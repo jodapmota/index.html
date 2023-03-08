@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/elements.css">
+  
+  <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primary-color: #0A1128;
+    --white-color: #FFFFFF;
+    --light-gray-color: #645f5f;
+    --gap: 3rem;
+    --secondary-color: rgb(67, 67, 139);
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 5rem;
+  }
+  
+  h4 {
+    font-size: 4.5rem;
+  }
+  
+  h5 {
+    font-size: 4rem;
+  }
+  
+  h6 {
+    font-size: 3.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    margin-bottom: 3rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 360px;
+  }
+
+  table td, table th {
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+  }
+
+  tfoot td, table th {
+    background: var(--light-gray-color);
+  }
+
+  table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    
+  }
+
+  .main-bg {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1009%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M877.31 363.95 L903.64 445.78000000000003L926.9615537549547 368.3784462450452z' stroke='%23e73635' stroke-width='2.07' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3cpath d='M1218.15 110.98a5.6 5.6 0 1 0 2.66-10.88 5.6 5.6 0 1 0-2.66 10.88zM1221.95 95.44a5.6 5.6 0 1 0 2.66-10.88 5.6 5.6 0 1 0-2.66 10.88zM1225.76 79.9a5.6 5.6 0 1 0 2.66-10.88 5.6 5.6 0 1 0-2.66 10.88zM1229.56 64.36a5.6 5.6 0 1 0 2.66-10.88 5.6 5.6 0 1 0-2.66 10.88zM1226.09 145.87a5.6 5.6 0 1 0 2.66-10.88 5.6 5.6 0 1 0-2.66 10.88zM1229.89 130.33a5.6 5.6 0 1 0 2.66-10.88 5.6 5.6 0 1 0-2.66 10.88zM1233.69 114.79a5.6 5.6 0 1 0 2.66-10.88 5.6 5.6 0 1 0-2.66 10.88zM1237.49 99.24a5.6 5.6 0 1 0 2.67-10.87 5.6 5.6 0 1 0-2.67 10.87z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M835.09 440.3L831.65 427.96 842.93 421.9 839.48 409.56 850.76 403.5 847.32 391.16 858.6 385.1' stroke='%23037b0b' stroke-width='1' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3crect width='205.76' height='205.76' clip-path='url(%26quot%3b%23SvgjsClipPath1010%26quot%3b)' x='206.16' y='346.25' fill='url(%23SvgjsPattern1011)' transform='rotate(322.42%2c 309.04%2c 449.13)'%3e%3c/rect%3e%3crect width='98.56' height='98.56' clip-path='url(%26quot%3b%23SvgjsClipPath1012%26quot%3b)' x='718.14' y='320.14' fill='url(%23SvgjsPattern1013)' transform='rotate(329.64%2c 767.42%2c 369.42)'%3e%3c/rect%3e%3crect width='219.6' height='219.6' clip-path='url(%26quot%3b%23SvgjsClipPath1014%26quot%3b)' x='675.94' y='389.19' fill='url(%23SvgjsPattern1015)' transform='rotate(220.43%2c 785.74%2c 498.99)'%3e%3c/rect%3e%3crect width='230.52' height='230.52' clip-path='url(%26quot%3b%23SvgjsClipPath1016%26quot%3b)' x='943.13' y='197.05' fill='url(%23SvgjsPattern1017)' transform='rotate(165.53%2c 1058.39%2c 312.31)'%3e%3c/rect%3e%3cpath d='M844.44 315.56a5.6 5.6 0 1 0-10.4 4.15 5.6 5.6 0 1 0 10.4-4.15zM829.58 321.48a5.6 5.6 0 1 0-10.41 4.15 5.6 5.6 0 1 0 10.41-4.15zM814.71 327.41a5.6 5.6 0 1 0-10.4 4.14 5.6 5.6 0 1 0 10.4-4.14zM799.85 333.33a5.6 5.6 0 1 0-10.4 4.15 5.6 5.6 0 1 0 10.4-4.15zM868.24 288.85a5.6 5.6 0 1 0-10.4 4.14 5.6 5.6 0 1 0 10.4-4.14zM853.38 294.77a5.6 5.6 0 1 0-10.4 4.15 5.6 5.6 0 1 0 10.4-4.15zM838.52 300.7a5.6 5.6 0 1 0-10.41 4.14 5.6 5.6 0 1 0 10.41-4.14zM823.65 306.62a5.6 5.6 0 1 0-10.4 4.15 5.6 5.6 0 1 0 10.4-4.15z' stroke='%23e73635' stroke-width='1.75' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3cpath d='M545.63 391.7L546.31 378.91 558.93 376.77 559.61 363.98 572.23 361.83 572.91 349.04 585.54 346.9M551.6 397.02L552.28 384.23 564.91 382.09 565.58 369.3 578.21 367.15 578.88 354.36 591.51 352.22' stroke='%23e73635' stroke-width='1' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3crect width='288' height='288' clip-path='url(%26quot%3b%23SvgjsClipPath1018%26quot%3b)' x='1194.82' y='-86.13' fill='url(%23SvgjsPattern1019)' transform='rotate(346.38%2c 1338.82%2c 57.87)'%3e%3c/rect%3e%3crect width='260.4' height='260.4' clip-path='url(%26quot%3b%23SvgjsClipPath1020%26quot%3b)' x='1131' y='106.53' fill='url(%23SvgjsPattern1021)' transform='rotate(151.51%2c 1261.2%2c 236.73)'%3e%3c/rect%3e%3cpath d='M1356.3100000000002 370.03000000000003 L1457.26 327.33000000000004L1455.6726658425373 397.56766584253734z' fill='%23e73635'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1009'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='205.76' height='12.86' patternUnits='userSpaceOnUse' id='SvgjsPattern1011'%3e%3crect width='205.76' height='6.43' x='0' y='0' fill='%23e73635'%3e%3c/rect%3e%3crect width='205.76' height='6.43' x='0' y='6.43' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1010'%3e%3ccircle r='51.44' cx='309.04' cy='449.13'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='7.04' height='7.04' patternUnits='userSpaceOnUse' id='SvgjsPattern1013'%3e%3cpath d='M3.52 1L3.52 6.04M1 3.52L6.04 3.52' stroke='%23037b0b' fill='none' stroke-width='1.28'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1012'%3e%3ccircle r='24.64' cx='767.42' cy='369.42'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='219.6' height='10.98' patternUnits='userSpaceOnUse' id='SvgjsPattern1015'%3e%3crect width='219.6' height='5.49' x='0' y='0' fill='%23037b0b'%3e%3c/rect%3e%3crect width='219.6' height='5.49' x='0' y='5.49' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1014'%3e%3ccircle r='54.9' cx='785.74' cy='498.99'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='230.52' height='6.78' patternUnits='userSpaceOnUse' id='SvgjsPattern1017'%3e%3crect width='230.52' height='3.39' x='0' y='0' fill='%23d3b714'%3e%3c/rect%3e%3crect width='230.52' height='3.39' x='0' y='3.39' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1016'%3e%3ccircle r='57.63' cx='1058.39' cy='312.31'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1019'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='%23e73635' fill='none' stroke-width='1.44'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1018'%3e%3ccircle r='72' cx='1338.82' cy='57.87'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='260.4' height='13.02' patternUnits='userSpaceOnUse' id='SvgjsPattern1021'%3e%3crect width='260.4' height='6.51' x='0' y='0' fill='%23d3b714'%3e%3c/rect%3e%3crect width='260.4' height='6.51' x='0' y='6.51' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1020'%3e%3ccircle r='65.1' cx='1261.2' cy='236.73'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+  }
+  
+  .white-bg {
+    background: var(--white-color);
+    color: var(--primary-color);
+  }
+  
+  .main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+  }
+  
+  .section {
+    min-height: 100vh;
+  }
+  
+  .menu-spacing {
+    height: 65px;
+  }
+
+  body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+  }
+  
+  .menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .menu h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+  }
+  .menu h1 a {
+    color: inherit;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+  }
+  .menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secondary-color); 
+    transition: all 300ms ease-in-out;
+  }
+  .menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+  }
+
+  .intro-content {
+    position: relative;
+    /* top: -8rem; */
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+  }
+  
+  .intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  
+  .intro-img img,
+  .intro-img svg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .top3-content {
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100vh;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .grid-one-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .grid-main-heading {
+    margin-bottom: 1rem;
+  }
+
+  .grid-description {
+    padding-bottom: 5rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: gridcounter;
+  }
+
+  .grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .grid h3::before {
+    counter-increment: gridcounter;
+    content: counter(gridcounter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+  }
+
+  .gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+  }
+
+  .gallery-img img {
+    transition: all 300ms ease-in-out;
+  }
+
+  .gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+  }
+
+  .contact-form {
+    grid-column: span 2;
+  }
+
+  .contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+  }
+
+  .form-group {
+    flex: 1 1 320px;
+    
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+
+  .form-group button:hover {
+    
+    background: var(--white-color);
+    color: var(--primary-color);
+  }
+
+  .form-group ::placeholder {
+    color: var(--light-gray-color);
+  }
+
+  .form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer a {
+    color: #444;
+  }
+
+  .heart {
+    color: rgb(216, 41, 178);
+  }
+
+  .footer p {
+    margin: 0;
+    padding: 3rem;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: white;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+  }
+
+  @media (max-width: 800px) {
+    .intro-content, .grid {
+     grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .gallery-img img {
+      width: 100%;
+    }
+
+    .grid-one-content {
+      display: block;
+    }
+
+    .menu {
+      bottom: 0;
+    }
+  
+    .menu-content, .menu-content ul {
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    .menu-content {
+      height: 100vh;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    
+
+    .close-menu-label::after {
+      content: '☰';
+      position: fixed;
+      z-index: 2;
+      top: 2rem;
+      right: 2rem;
+      background: var(--primary-color);
+      color: white;
+      font-size: 3rem;
+      line-height: 3rem;
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
+      padding: 0.7rem;
+      cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+      display: block;
+
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+      display: block;
+      content:'x' ;
+    }
+
+    .menu-spacing {
+      display: none;
+    }
+  }
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#home">LOGO</a>
+      </h1>
+
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false">
+          <li><a href="#intro">intro</a></li>
+          <li><a href="#grid-one">grid um</a></li>
+          <li><a href="#gallery">galley</a></li>
+          <li><a href="#pricing">pricing</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>January brings us Firefox 85</h2>
+        <p>To wrap up January, we are proud to bring you the release of Firefox 85. In this version we are bringing you
+          support for the :focus-visible pseudo-class in CSS and associated devtools, and the complete removal of Flash
+          support from Firefox.</p>
+      </div>
+      <div class="intro-img">
+        <img src="img/img/undraw_love_re_mwbq.svg">
+      </div>
+    </div>
+  </section>
+
+  <section id="intro" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>top 3 jobs</h2>
+      <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+      <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+      <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+    </div>
+  </section>
+
+  <section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+     <h2 class="grid-main-heading">My Grid</h2>
+     <p class="grid-description">Uma breve descrição</p>
+      <div class="grid">
+        <article>
+          <h3>Teste 1</h3>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit non quaerat saepe nulla. Et corrupti exercitationem veritatis dolor accusantium ratione dolorem quidem fugiat sequi voluptas repudiandae, quis iusto minus molestias!</p>
+    </article>
+    <article>
+      <h3>Teste 1</h3>
+ <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit non quaerat saepe nulla. Et corrupti exercitationem veritatis dolor accusantium ratione dolorem quidem fugiat sequi voluptas repudiandae, quis iusto minus molestias!</p>
+</article>
+<article>
+  <h3>Teste 1</h3>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit non quaerat saepe nulla. Et corrupti exercitationem veritatis dolor accusantium ratione dolorem quidem fugiat sequi voluptas repudiandae, quis iusto minus molestias!</p>
+</article>
+
+    </div>
+    </div>
+  
+  </section>
+
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+     <h2 class="grid-main-heading">Gallery</h2>
+     <p class="grid-description">Uma breve descrição</p>
+      <div class="grid">
+        <div class="gallery-img">
+         <img src="http://source.unsplash.com/random/360x360?r=1" alt="random imagem from unsplash">
+        </div>
+    <div class="gallery-img">
+      <img src="http://source.unsplash.com/random/360x360?r=2" alt="random imagem from unsplash">
+    </div>
+<div class="gallery-img">
+  <img src="http://source.unsplash.com/random/360x360?r=3" alt="random imagem from unsplash">
+</div>
+<div class="gallery-img">
+  <img src="http://source.unsplash.com/random/360x360?r=4" alt="random imagem from unsplash">
+</div>
+<div class="gallery-img">
+  <img src="http://source.unsplash.com/random/360x360?r=5" alt="random imagem from unsplash">
+</div>
+<div class="gallery-img">
+  <img src="http://source.unsplash.com/random/360x360?r=6" alt="random imagem from unsplash">
+</div>
+
+    </div>
+    </div>
+  
+  </section>
+
+  <section id="pricing" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Pricing</h2>
+      <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some
+        surprises at the machine’s performance. This post details some background information on the experience of
+        porting Firefox to run natively on these CPUs.</p>
+      <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to
+        know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+      <div class="responsive-table">
+        <table>
+          <caption>Pricing table</caption>
+          <thead>
+            <tr>
+              <th>Title 1</th>
+              <th>Title 2</th>
+              <th>Title 3</th>
+              <th>Title 4</th>
+              <th>Title 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+            </tr>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+            </tr>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Testando</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>What is the context you inserted to?</h2>
+        <p>Só se pode viver perto de outro, e conhecer outra pessoa, sem perigo de ódio, se a gente tem amor. Qualquer amor já é um pouquinho de saúde, um descanso na loucura.</p>
+      </div>
+      <div class="intro-img">
+        <img src="img/img/undraw_relaunch_day_902d.svg">
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Contact me</legend>
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input type="text" name="last-name" id="first-name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your e-mail">
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+          </div>
+          <div class="form-group full-width">
+            <button type="submit">Send message</button>
+          </div>
+
+        </fieldset>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <footer id ="footer" class="white-bg footer">
+    <p><a href="">Feito com <span class="heart">♥</span> por Joda</a></p>
+  </footer>
+
+  <a class="back-to-top" href="#home">▶</a>
+</body>
+</html>
